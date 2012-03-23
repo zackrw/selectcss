@@ -1,7 +1,7 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 	background-color:#EFEFEF;
+	min-width:1100px;
 }
 
 a {
@@ -9,6 +9,7 @@ a {
 }
 
 #main{
+	padding-top:50px;
 	width:600px;
 	margin:0 auto;
 }
@@ -89,12 +90,18 @@ input{
 	position:fixed;
 	top:20px;
 	left:20px;
+	font-size: 24px;
 }
 
 .result{
-	font-size:16px;
+	font-size:22px;
 	margin-left:20px;
-	line-height:22px;
+	width:600px;
+	letter-spacing:1px;
+	line-height:27px;
 }
 
+#footer{
+	height:10px;
+}
 

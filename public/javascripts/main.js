@@ -14,7 +14,7 @@ $(document).ready(function(){
 		/^\s*\*\s*$/,
 		/^\s*table\s*$/,
 		/^\s*#footer\s*$/,
-		/^\s*input\s*,\s*textarea\s*,\s*button\s*$/,
+		/^\s*a:hover\s*,\s*#skip_button:hover\s*$/,
 	];
 	
 	$(".submit").click(function(){
@@ -37,7 +37,26 @@ $(document).ready(function(){
 		}
 		if(Number($(".total").html()) >= 15){
 			$(".score").prepend("final ");
-			$(".result").html(Number($(".right").html()) >= 15? "Great job! You aced it.": "Good effort. Keep editing and checking or refresh the page and try to get a perfect score!").show();
+			if(Number($(".right").html()) >= 15){
+				$(".result").html("Great job!<br />You aced it.");
+				$(document).snowfall();
+				$('#confetti_0').snowfall({flakeCount : 150, maxSpeed : 8, flakeColor : "#F09", round: false, shadow:true, minSize:3, maxSize:7});
+				$('#confetti_1').snowfall({flakeCount : 150, maxSpeed : 8, flakeColor : "#6F0", round: false, shadow:true, minSize:3, maxSize:7});
+				$('#confetti_2').snowfall({flakeCount : 150, maxSpeed : 8, flakeColor : "#09F", round: false, shadow:true, minSize:3, maxSize:7});
+				$('#confetti_3').snowfall({flakeCount : 150, maxSpeed : 8, flakeColor : "#FF9", round: false, shadow:true, minSize:3, maxSize:7});	
+			}
+			else if(Number($(".right").html()) >= 12){
+				$(".result").html("Well done. You're almost there.<br/>Keep editing and checking or refresh the page and try to get a perfect score!");
+			}
+			else if(Number($(".right").html()) >= 8){
+				$(".result").html("Not bad.<br/>Let's try that again and see if we can't do better.");
+			}
+			else{
+				$(".result").html("Looks like we've got some work to do.<br/>Let's edit and check, or refresh the page and try to improve our score.");
+			}
+			$("body").animate({
+				scrollTop: $("body").prop("scrollHeight")
+			}, 1000);
 		}
 	});
 });
