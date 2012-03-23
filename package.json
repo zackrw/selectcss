@@ -1,0 +1,16 @@
+{
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "2.5.5",
+    "jade": ">= 0.0.1"
+  },
+  "subdomain": "select",
+  "scripts": {
+    "start": "app.js"
+  },
+  "engines": {
+    "node": "v0.6.x"
+  },
+  "name": "selectorz"
+}
