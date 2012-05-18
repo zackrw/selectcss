@@ -1,6 +1,11 @@
-
 /**
- * Module dependencies.
+ * Selectorz by Zack Reneau-Wedeen.
+ * Not too fancy, but a basic example
+ * of a cookie-cutter express app with
+ * some front-end.
+ * 
+ * Hosted by nodejitsu.
+ * 
  */
 
 var express = require('express')
