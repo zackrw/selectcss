@@ -16,7 +16,7 @@
   "devDependencies": {},
   "optionalDependencies": {},
   "author": "Zack Reneau-Wedeen (zackrw.com)",
-  "description": "A small web app for practicing your css selectors.",
+  "description": "A small web app for practicing your css selectors. Based on node.js & express with zero customization; complete with a little suprise for anyone who aces it!",
   "homepage": "select.jit.su",
   "repository": {
     "type": "git",
