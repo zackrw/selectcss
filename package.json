@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1-9",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "express": "2.5.5",
@@ -12,5 +12,14 @@
   "engines": {
     "node": "v0.6.x"
   },
-  "name": "selectorz"
+  "name": "selectorz",
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "author": "Zack Reneau-Wedeen (zackrw.com)",
+  "description": "A small web app for practicing your css selectors.",
+  "homepage": "select.jit.su",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xaq2892/selectcss.git"
+  }
 }
