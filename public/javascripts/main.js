@@ -14,7 +14,7 @@ $(document).ready(function(){
 		/^\s*\*\s*$/,
 		/^\s*table\s*$/,
 		/^\s*#footer\s*$/,
-		/^\s*a:hover\s*,\s*#skip_button:hover\s*$/,
+		/^\s*a:hover\s*,\s*#skip_button:hover\s*$/
 	];
 	
 	$(".submit").click(function(){

@@ -1,0 +1,7 @@
+p.prompt #{question.prompt}
+  - if(question.note)
+    | <br /> #{question.note}
+input(value="#{question.val || ''}")
+.submit check
+.true(style="display:none;") correct!
+.false(style="display:none;") oops! Try again.
